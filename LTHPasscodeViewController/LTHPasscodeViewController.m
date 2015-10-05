@@ -928,6 +928,10 @@ options:NSNumericSearch] != NSOrderedAscending)
 		
 		_isCurrentlyOnScreen = YES;
 	}
+
+  if ([self.delegate respondsToSelector: @selector(passcodeViewControllerWillAppear)]) {
+    [self.delegate performSelector: @selector(passcodeViewControllerWillAppear)];
+  }
 }
 
 

@@ -11,6 +11,10 @@
 @protocol LTHPasscodeViewControllerDelegate <NSObject>
 @optional
 /**
+ @brief Called right before the passcode view controller will appear.
+ */
+- (void)passcodeViewControllerWillAppear;
+/**
  @brief Called right before the passcode view controller will be dismissed or popped.
  */
 - (void)passcodeViewControllerWillClose;
